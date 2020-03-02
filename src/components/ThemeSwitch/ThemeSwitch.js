@@ -7,8 +7,6 @@ import { LIGHT } from '../../constants';
 const ThemeSwitch = ({ theme }) => {
   const { themeType, toggleTheme } = theme;
 
-  console.log('theme.themeType: ', themeType);
-
   return (
     <Root>
       <Label>

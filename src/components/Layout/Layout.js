@@ -9,8 +9,8 @@ import { LIGHT } from '../../constants';
 const Layout = ({ children, theme }) => {
   return (
     <Root theme={theme.themeType}>
-      <ThemeSwitch />
       <Wrapper theme={theme.themeType}>
+        <ThemeSwitch />
         {children}
       </Wrapper>
     </Root>
