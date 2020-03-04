@@ -38,7 +38,7 @@ class ContactForm extends Component {
 
   render() {
     const { name, number } = this.state;
-    const { themeType } = this.props.theme;
+    const { type } = this.props.theme;
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -50,7 +50,7 @@ class ContactForm extends Component {
           <LabelText>Number</LabelText>
           <input type="text" name="number" value={number} onChange={this.handleChange} required />
         </Label>
-        <SubmitBtn type="submit" theme={themeType}>Add contact</SubmitBtn>
+        <SubmitBtn type="submit" theme={type}>Add contact</SubmitBtn>
       </form>
     )
   }

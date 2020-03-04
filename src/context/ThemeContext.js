@@ -8,12 +8,12 @@ export default class ThemeContext extends Component {
 
   toggleTheme() {
     this.setState({
-      themeType: this.state.themeType === DARK ? LIGHT : DARK
+      type: this.state.type === DARK ? LIGHT : DARK
     });
   };
 
   state = {
-    themeType: 'light',
+    type: 'light',
     toggleTheme: this.toggleTheme.bind(this)
   };
 

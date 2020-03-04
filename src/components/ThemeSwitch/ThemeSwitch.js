@@ -5,12 +5,12 @@ import withTheme from '../hoc/withTheme';
 import { LIGHT } from '../../constants';
 
 const ThemeSwitch = ({ theme }) => {
-  const { themeType, toggleTheme } = theme;
+  const { type, toggleTheme } = theme;
 
   return (
     <Root>
       <Label>
-        <Input type="checkbox" checked={themeType === LIGHT} onChange={() => toggleTheme()} />
+        <Input type="checkbox" checked={type === LIGHT} onChange={toggleTheme} />
         <Slider className="slider round"></Slider>
       </Label>
     </Root>
